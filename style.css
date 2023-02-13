@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+:root{
+  --primary-color: #e47312;
+  --primary-hover-color:#e98a38;
+  --section-grey:#979494;
+}
+/* common */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif, Arial;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  }
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+a:hover{
+  opacity: .9;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+.link{
+  font-size: 17px;
+  font-family: 'Dosis', sans-serif;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  color:var(--section-grey)
+}
+.link:hover{
+  border-bottom: 1px solid var(--primary-color);
+}
+.link.white{
+  color: #fff;
+}
+.link.white:hover{
+  border-bottom: 1px solid white;
+}
+.background-rel{
+  font-size: 110px;
+  font-weight: 600;
+  letter-spacing: 11px;
+  color: rgba(241,241,247,0.4);
+}
+/*banner*/
+.banner{
+  background-image: linear-gradient(76deg,rgba(193, 195, 204, 0.83) 35%,rgba(193, 195, 204, 0.28) 65%),
+  url("https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: calc(100vh - 40px);
+  position: relative;
+  background-attachment: scroll,fixed;
+}
+
+.banner header{
+  display: flex;
+  margin: 20px;
+  background-color: #fff;
+}
+.banner header .nuuk{
+  background-color: var(--primary-color);
+  height: 112px;
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+.banner header img.nuuk_img{
+  width: 160px;
+  position: relative;
+  padding: 30px 35px;
+  display: flex;
+  top: 15px;
+}
+
+.banner header nav {
+  background-color: white;
+  position: absolute;
+  height: 90px;
+  right: 220px;
+  top: 40px;
+  left: 240px;
+}
+.banner header nav ul {
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+}
+
+.banner header nav ul li {
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 48px 20px;
+  position: relative;
+  display: inline-block;
+  top: -10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #414147;
+}
+.banner header nav li.active {
+  color: var(--primary-color);
+}
+
+.banner header nav li:hover {
+  color: var(--primary-color);
+}
+
+.banner header .last {
+  height: 90px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 40px;
+  width: 160px;
+  right: 60px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffff;
+  transition: all ease 0.2s;
+}
+
+.banner header .last:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.banner  header .last span {
+  position: relative;
+  top: 40px;
+  left: 33px;
+  letter-spacing: 1px;
+}
+.banner .dis{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 80px;
+}
+.banner .dis h1 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 70px;
+  letter-spacing: 1px;
+  color: #fff;
+  top: 150px;
+  width: 650px;
+  font-family: 'Dosis', sans-serif;
+}
+.banner .dis p{
+ color: rgb(249,248,248);
+ font-weight: 400;
+ font-size: 20px;
+ position: absolute;
+ top: 230px;
+}
+.banner .dis .last-alp{
+  background-color: var(--primary-hover-color);
+  position: absolute;
+  padding: 18px 33px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: all ease 0.2s;
+  top: 280px;
+}
+/* Icons */
+.icons{
+  background-color: #0a1229;
+  position: absolute;
+  right: 0px;
+  bottom: 220px;
+}
+.icons ul{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.icons ul li img{
+  width: 40px;
+  padding: 12px;
+  cursor: pointer;
+}
+.icon{
+  border-bottom: 1px solid rgb(59,59,59);
+}
+/* section */
+.section{
+  margin: 0;
+  background:#e4e2e2;
+  padding: 90px 0 100px;
+  align-items: center;
+}
+.section .heading{
+  margin-bottom: 50px;
+}
+.section .heading h1{
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 43px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* white section */
+.sec{
+  margin: 0;
+  background:#fff;
+  padding: 90px 0 100px;
+  align-items: center;
+}
+.sec .heading{
+  margin-bottom: 50px;
+}
+.sec .heading h1{
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 43px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* Our-works */
+.work .projects{
+  flex-wrap: wrap;
+}
+.work .projects .hard{
+  width:  calc(33.33% - 20px);
+  position: relative;
+  margin-bottom: 30px;
+}
+.work .projects .hard img{
+  width: 100%;
+  display: block;
+}
+.work .projects .hard .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(168, 168, 168, 0.3);
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.work .projects .hard:hover .overlay{
+  display: flex;
+}
+.work .projects .hard .overlay span{
+  background-color: var(--primary-hover-color);
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+/*outer*/
+.outer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  top: 600px;
+}
+ .outer .white{
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+}
+ .outer .contact{
+  position: absolute;
+  background: var(--primary-color);
+  background-image: linear-gradient(186deg,#e47312,#ff6361);
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 970px;
+  height: 200px;
+  right: 0px;
+  bottom: 25px;
+}
+.outer .contact .first{
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.outer .contact .second{
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.outer .contact .third{
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.symbol{
+  width: 25px;
+  margin-bottom: 5px;
+  align-items: centerS;
+}
+.bol{
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.light{
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}
+.map{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.map:hover{
+ border-bottom: 1px solid #fff;;
+}
+/* specialization */
+.team-specialization .specialization .special{
+  width:calc(25% - 20px);
+}
+.team-specialization .specialization .special img{
+  width: 60px;
+}
+.team-specialization .specialization .special h2{
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.team-specialization .specialization .special p{
+  margin-bottom: 10px;
+  color: var(--section-grey);
+}
+.team-specialization .specialization .special a{
+  margin-top: 14px;
+  font-size: 13px;
+}
+/* Who-we-are */
+.we-are .team{
+  padding-bottom: 60px;
+}
+.we-are .team .img,
+.we-are .team .content{
+ width: calc(50% - 50px);
+}
+.we-are .team .img img{
+  width: 100%;
+}
+.we-are .team .contact p{
+  margin-bottom: 10px;
+}
+.we-are .team .contact a{
+  margin-top: 28px;
+  display: inline-block;
+}
+.we-are .employers .employer{
+  width: calc(25% - 20px);
+}
+.we-are .employers .employer h2{
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 78px;
+  font-family: 'Dosis', sans-serif;
+  line-height: 70px;
+  font-weight: 500;
+}
+.we-are .employers .employer p{
+  margin-bottom: 10px;
+  width: 150px;
+}
+/*-quoter--*/
+.quotebox{
+  background-image: linear-gradient(72deg, #e47312,
+  rgba(255,99,97,0.78)),url(
+    https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg
+  );
+  padding: 80px 0;
+ text-align: center;
+ color: #fff;
+ background-position: 0px 0px ,center;
+ background-size: auto,cover;
+ background-repeat: repeat,no-repeat;
+ background-attachment: scroll,fixed;
+ margin: 0px;
+}
+.quotebox h1{
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 43px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.quotebox p{
+  margin-bottom: 20px;
+}
+/* professionals */
+.profess .member .ceo{
+  width: calc(25% - 20px);
+  position: relative;
+}
+.profess .member .ceo .pic1{
+  height: 240px;
+  background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-1.jpg);
+  background-position:center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+.profess .member .ceo .pic2{
+  height: 240px;
+  background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-2.jpg);
+  background-position:center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+.profess .member .ceo .pic3{
+  height: 240px;
+  background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-3.jpg);
+  background-position:center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+.profess .member .ceo .pic4{
+  height: 240px;
+  background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/team-4.jpg);
+  background-position:center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+.profess .member .ceo .content{
+  background: white;
+  padding: 20px 15px;
+}
+.profess .member .ceo .content h2{
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.profess .member .ceo .content p{
+  margin: 0;
+  color: var(--section-grey);
+}
+.social{
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.social a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ffffff38;
+}
+.social a img{
+  width: 40%;
+}
+/* testimonials */
+/* .testimonials {
+  padding-bottom: 60px;
+} */
+.testimonials .heading-outer {
+  width: calc(40% - 50px);
+}
+.testimonials .heading-outer a {
+  display: inline-block;
+  margin-top: 20px;
+}
+.testimonials .lists {
+  width: calc(60% - 50px);
+}
+.testimonials .lists {
+  flex-wrap: wrap;
+}
+.testimonials .lists .testimonial {
+  width: calc(50% - 20px);
+  background: white;
+  margin-bottom: 70px;
+  text-align: center;
+  padding: 30px 15px 15px;
+  position: relative;
+}
+.testimonials .lists .testimonial:nth-child(2) {
+  margin-top: 110px;
+}
+.testimonials .lists .testimonial:nth-child(3) {
+  margin-top: -110px;
+  margin-bottom: 0;
+}
+.testimonials .lists .testimonial:nth-child(4) {
+  margin-bottom: 0;
+}
+.testimonials .lists .testimonial .highlight {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 71px;
+  padding-top: 40px;
+  justify-content: center;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-30px);
+}
+.testimonials .lists .testimonial h2 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;  
+}
+.testimonials .lists .testimonial h3 {
+  margin-bottom: 0px;
+  color: #bdbdc9;
+  font-size: 16px;  
+}
+.testimonials .lists .testimonial p {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.logo{
+  width: 100%;
+  height: 200px;
+  background-image:linear-gradient(56deg, #e47312,#ff6361);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo img{
+  width: 5%;
+  cursor: pointer;
+}
+.logo h1{
+  font-family: "Dosis",sans-serif;
+  margin-left: 50px;
+  color: white;
+  font-size: 25px;
+}
+/* footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 70px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-top: 1px solid #2f3038;
+  background-color: #0a1229;
+}
+footer .top{
+  width: 1000px;
+  display: flex;
+  margin-left: 31px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+footer .top .left{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+footer h1.fmain {
+ color: #fff;
+ font-size: 15px;
+ font-family: "Dosis",sans-serif;
+ line-height: 20px;
+ margin-bottom: 35px;
+}
+footer p.fsec{
+  color: #fff;
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+footer .right .phone{
+  display: flex;
+  margin-bottom: 20px;
+}
+footer .right .phone img{
+  width: 19px;
+  height: 25px;
+  margin-right: 10px;
+}
+footer .right .phone .det{
+  display: flex;
+  flex-direction: column;
+}
+footer .right .phone .det h1{
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+footer .right .phone .det p{
+  color: #979494;
+  font-size: 15px;
+  line-height: 20px;
+}
+footer .nuuk{
+  background: var(--primary-color);
+  height: 75px;
+  width: 100px;
+  position: relative;
+  z-index: 2;
+  margin-top: -100px;
+}
+footer .nuuk img{
+  padding: 25px;
+  width: 100px;
+  align-items: center;
+}
+.hor{
+  background-image: linear-gradient(158deg, #e47312,#ff6361);
+  width: 200px;
+  height: 1px;
+  margin-top: 57px;
+  margin-left: 6px;
+}
